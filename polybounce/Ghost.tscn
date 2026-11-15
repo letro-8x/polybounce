@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dy7bftkdq4a1v"]
+
+[ext_resource type="Texture2D" uid="uid://b6ws1yh6jf1pu" path="res://RED BALL.png" id="1_k73yw"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wbr0u"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_k73yw")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1370199470]
+modulate = Color(1, 1, 1, 0.10980392)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1699396139]
+sprite_frames = SubResource("SpriteFrames_wbr0u")

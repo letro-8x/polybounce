@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://b7ewsds55ly40"]
+
+[ext_resource type="Script" uid="uid://dgt67dg21w32c" path="res://map.gd" id="1_wijl4"]
+[ext_resource type="PackedScene" uid="uid://dy7bftkdq4a1v" path="res://Ghost.tscn" id="3_p5pve"]
+[ext_resource type="PackedScene" uid="uid://duhbw8dd0xb8y" path="res://Ball.tscn" id="3_urblq"]
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=562464021]
+script = ExtResource("1_wijl4")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=1659890002]
+position = Vector2(509.9999, 342.68497)
+scale = Vector2(0.35714287, 0.32876715)
+invert_enabled = true
+polygon = PackedVector2Array(-872, -883, -579, -514, -18, -870, 822, -665, 1316, -701, 1134, 47, 1085, 322, 1636, 349, 1694, 807, 551, 736, -468, 754, -1184, 723, -1130, 451, -1330, -945)
+
+[node name="Camera2D" type="Camera2D" parent="Polygon2D" unique_id=827136806]
+position = Vector2(195, -93)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=142607130]
+position = Vector2(758, 253.00002)
+scale = Vector2(0.36719534, 0.34051794)
+build_mode = 1
+polygon = PackedVector2Array(-1965.8987, -641.37164, -1525.8987, -588.3718, -1239.1223, -231.99957, -684.89905, -575.37177, 122.55078, -378.83472, 604.583, -414.07513, 435.7356, 270.17657, 378.54517, 575.5936, 915.04443, 602.02405, 972.2346, 1042.5294, -144.33716, 974.9852, -1072.9983, 992.60547, -1824.6417, 969.1118, -1767.4514, 698.9352)
+
+[node name="CharacterBody2D" parent="." unique_id=1253035984 instance=ExtResource("3_urblq")]
+position = Vector2(221, 273)
+
+[node name="CharacterBody2D2" parent="." unique_id=1370199470 instance=ExtResource("3_p5pve")]
+modulate = Color(1, 1, 1, 0.44313726)
+z_index = -1
+position = Vector2(221, 273)
