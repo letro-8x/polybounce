@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dy7bftkdq4a1v"]
 
-[ext_resource type="Texture2D" uid="uid://b6ws1yh6jf1pu" path="res://RED BALL.png" id="1_k73yw"]
+[ext_resource type="Texture2D" uid="uid://chtv7iwbq3bqa" path="res://Ghost.png" id="1_k73yw"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_wbr0u"]
 animations = [{
